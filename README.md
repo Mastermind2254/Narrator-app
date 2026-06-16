@@ -1,6 +1,6 @@
 # Narrator
 
-## Every story changes with the narrator
+Every story changes with the narrator
 
 ## What is this?
 
@@ -8,20 +8,19 @@ A web app that takes your everyday problems and transforms them through two lens
 
 **Loredrop** — your problem gets rewritten as epic lore across 4 dramatic worlds: Dark Fantasy, Sci-Fi, Noir, and Apocalyptic.
 
-**[ROAST NAME]** — pick a character and get a 4-line response to your problem from a Philosopher, Shakespeare, a Daarshanik, or a Kathakaar.
+**Retellings** — pick a character and get a 4-line response to your problem from a Philosopher, Shakespeare, a Daarshanik, or a Kathakaar.
 
 ## Features
 
 - 4 Loredrop themes — same problem, 4 completely different worlds
-- 4 roast characters — 2 English, 2 Hindi
-- Hindi characters use a larger model for better grammar and nuance
+- 4 Retelling characters — 2 English, 2 Hindi
 - Clean minimal dark UI
 - No accounts, no data stored, completely stateless
 
 ## Tech Stack
 
 - **Backend** — Flask (Python)
-- **LLM** — Groq API (Llama 3.1 8b for English)
+- **LLM** — Groq API (Llama 3.1 8b)
 - **Frontend** — HTML, CSS, JavaScript
 
 ## Live Demo
