@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+    <div class="hero">
+        <h1 class="app-name">Narrator</h1>
+        <p class="tagline">Every story changes with the narrator.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card" id="card1" onclick="window.location.href='/loredrop'">
+            <h2>LoreDrop</h2>
+            <p>Your problem. Epic fantasy. Four worlds to fall into.</p>
+            <span class="enter">Enter →</span>
+        </div>
+
+        <div class="card" id="card2" onclick="window.location.href='/roast'">
+            <h2>Retellings</h2>
+            <p>The same story, retold through voices old and new.</p>
+            <span class="enter">Enter →</span>
+        </div>
+
+    </div>
+
+</body>
+</html>

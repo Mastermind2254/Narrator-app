@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/roast.css') }}">
+</head>
+<body>
+
+    <a href="/" class="back">← back</a>
+
+    <div class="container">
+        <h1>Retelling</h1>
+        <p class="subtitle">pick your narrator. brace yourself.</p>
+
+        <div class="characters">
+
+            <div class="section-label">English</div>
+            <div class="char-grid">
+                <button class="char-btn" data-character="philosopher">🏛️ Philosopher</button>
+                <button class="char-btn" data-character="shakespeare">✍️ Shakespeare</button>
+            </div>
+
+            <div class="section-label">Hindi</div>
+            <div class="char-grid">
+                <button class="char-btn" data-character="दार्शनिक">🧘 दार्शनिक</button>
+                <button class="char-btn" data-character="कथाकार">📜 कथाकार</button>
+            </div>
+
+        </div>
+
+        <textarea id="entryBox" placeholder="what's your problem..."></textarea>
+
+        <button id="roastBtn" onclick="roast()">retell my story</button>
+
+        <div class="loading" id="loading">summoning your narrator...</div>
+
+        <div class="output" id="output"></div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/roast.js') }}"></script>
+
+</body>
+</html>

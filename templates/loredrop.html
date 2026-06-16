@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loredrop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loredrop.css') }}">
+</head>
+<body>
+
+    <a href="/" class="back">← back</a>
+
+    <div class="container">
+        <h1>🔮 Loredrop</h1>
+        <p class="subtitle">your problem. epic lore.</p>
+
+        <div class="themes">
+            <button class="theme-btn active" data-theme="dark_fantasy">⚔️ Dark Fantasy</button>
+            <button class="theme-btn" data-theme="sci_fi">🚀 Sci-Fi</button>
+            <button class="theme-btn" data-theme="noir">🕵️ Noir</button>
+            <button class="theme-btn" data-theme="apocalyptic">🌊 Apocalyptic</button>
+        </div>
+
+        <textarea id="entryBox" placeholder="what's going on..."></textarea>
+
+        <button id="generateBtn" onclick="generate()">drop the lore</button>
+
+        <div class="loading" id="loading">crafting your lore...</div>
+
+        <div class="output" id="output"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/loredrop.js') }}"></script>
+
+</body>
+</html>
